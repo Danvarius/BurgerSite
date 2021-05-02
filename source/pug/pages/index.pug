@@ -1,0 +1,30 @@
+extends ./../main/_main.pug
+
+include ./../mixin/button.pug
+
+block main 
+   section.preview 
+      img.preview__bg(src="img/bg.jpg", alt="")
+      h1.heading.visually-hidden Hotte
+      .preview__wrapper 
+         h2.preview__title Take Food &amp; Let's Go.
+         span.preview__subtitle Have any food on your mind? Just order now! 
+         button.preview__button(type="button") Today's Menu &Gt;
+   section.special-offer
+      .special-offer__wrapper
+         .special-offer__burger-box 
+            img.special-offer__img-burger(src="img/burger.png", alt="", width="100", height="100")
+            .special-offer__cola-wrapper 
+         .special-offer__proposal
+            .special-offer__icon-wrapper 
+            h3.special-offer__title Today's Special Surprise For You 
+            p.special-offer__text It is a long established fact that a will distractedreadable content of a page when looking at its the layoutusing Lorem Ipsum is that it has a normal distributionas opposed to using making it look like.    
+            .special-offer__container 
+               .special-offer__price-wrapper
+                  span.special-offer__price 89.00
+                  span.special-offer__time 25 min away 
+               .special-offer__wrapper-plus
+                  span.special-offer__plus +
+                  span.special-offer__counter 02
+               +button('Order Now') 
+
