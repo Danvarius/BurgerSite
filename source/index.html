@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../js/slick/slick.css">
+    <link rel="stylesheet" href="../../js/slick/slick-theme.css">
   </head>
   <body>
     <header class="page-header">
@@ -30,11 +32,11 @@
           <ul class="page-header__list page-header__list--no-js">
             <li class="page-header__item">
               
-               <a class="page-header__link" href="#">Home</a>
+               <a class="page-header__link" href="index.html">Home</a>
             </li>
             <li class="page-header__item">
               
-              <a class="page-header__link" href="#">About</a>
+              <a class="page-header__link" href="about.html">About</a>
             </li>
             <li class="page-header__item page-header__item--grow page-header__item--top">
               
@@ -67,21 +69,374 @@
       <section class="special-offer">
         <div class="special-offer__wrapper">
           <div class="special-offer__burger-box"> <img class="special-offer__img-burger" src="img/burger.png" alt="" width="100" height="100">
-            <div class="special-offer__cola-wrapper"> </div>
+            <div class="wrapper-rectangle"><img class="img-rectangle" src="../../img/Coca-Cola.png" alt="a drink Coca-Cola"/>
+              <div class="rectangles"></div>
+              <div class="bg-rectangle"></div>
+            </div>
           </div>
           <div class="special-offer__proposal">
             <div class="special-offer__icon-wrapper"> </div>
-            <h3 class="special-offer__title">Today's Special Surprise For You </h3>
+            <h3 class="special-offer__title">Today's Special Surprise For You! </h3>
             <p class="special-offer__text">It is a long established fact that a will distractedreadable content of a page when looking at its the layoutusing Lorem Ipsum is that it has a normal distributionas opposed to using making it look like.    </p>
             <div class="special-offer__container"> 
-              <div class="special-offer__price-wrapper"><span class="special-offer__price">89.00</span><span class="special-offer__time">25 min away </span></div>
-              <div class="special-offer__wrapper-plus"><span class="special-offer__plus">+</span><span class="special-offer__counter">02</span></div>
+              <div class="special-offer__price-wrapper"><span class="special-offer__price">$89.00</span>
+                <div class="special-offer__time-wrapper">
+                  <svg width="16" height="16">
+                    <use xlink:href="../../img/sprite.svg#clock"></use>
+                  </svg><span class="special-offer__time">25 min away </span>
+                </div>
+              </div>
+              <div class="special-offer__wrapper-plus">
+                <div class="special-offer__box-plus"></div><span class="special-offer__plus">+</span><span class="special-offer__counter">02</span>
+              </div>
               <button class="bem-button" type="button">Order Now</button>
+            </div>
+          </div>
+          <div class="special-offer__advantages">
+            <div class="advantage-wrapper"> 
+              <div class="advantage-box"><img class="advantage-icon" src="../../img/honey-icon.png" width="40" height="40"/></div>
+              <div class="advantage-container"> 
+                <h4 class="advantage-title">Choose Food</h4>
+                <p class="advantage-text">It is a long establed factwill distracted readablelooking at layou.       </p>
+              </div>
+            </div>
+            <div class="advantage-wrapper"> 
+              <div class="advantage-box"><img class="advantage-icon" src="../../img/burger-icon.png" width="40" height="40"/></div>
+              <div class="advantage-container"> 
+                <h4 class="advantage-title">Place Order</h4>
+                <p class="advantage-text">It is a long establed factwill distracted readablelooking at layou.       </p>
+              </div>
+            </div>
+            <div class="advantage-wrapper"> 
+              <div class="advantage-box"><img class="advantage-icon" src="../../img/appliances-icon.png" width="40" height="40"/></div>
+              <div class="advantage-container"> 
+                <h4 class="advantage-title">Receive &amp; Go</h4>
+                <p class="advantage-text">It is a long establed factwill distracted readablelooking at layou.       </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="regular-menu"> 
+        <h3 class="regular-menu__title">Regular Menu's of Hotte.</h3>
+        <p class="regular-menu__text">There are many variations of passages of Lorem Ipsum available butmajority have suffered alteration injected humour          </p>
+        <div class="regular-menu__wrapper">
+          <div class="burgercard-wrapper"> 
+            <div class="burgercard-box"> <img class="img-burger" src="../../img/chicken-burger.png" alt="Chicken Burger" width="120" height="110"/>
+              <div class="burgerlist-wrappering">
+                <h4 class="burgercard-title">Ingredients:</h4>
+                <ul class="burgercard-list"> 
+                  <li class="burgercard-item">1/2 tbsp olive oil</li>
+                  <li class="burgercard-item">1 onion, peeled and finely chopped</li>
+                  <li class="burgercard-item">1 tsp mixed dried herbs</li>
+                  <li class="burgercard-item">1 egg, beaten</li>
+                  <li class="burgercard-item">4 slices mature Cheddar (optional)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="burgercard-container"> 
+              <h4 class="burgercard-heading">Chicken Burger</h4>
+              <div class="special-offer__time-wrapper">
+                <svg width="16" height="16">
+                  <use xlink:href="../../img/sprite.svg#clock"></use>
+                </svg><span class="special-offer__time">25 min away</span>
+              </div>
+              <div class="burgercard-price">  <span class="special-offer__price">$89.00</span>
+                <button class="bem-button" type="button">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="burgercard-wrapper"> 
+            <div class="burgercard-box"> <img class="img-burger" src="../../img/burger.png" alt="Special Beef Burger" width="120" height="110"/>
+              <div class="burgerlist-wrappering">
+                <h4 class="burgercard-title">Ingredients:</h4>
+                <ul class="burgercard-list"> 
+                  <li class="burgercard-item">1/2 tbsp olive oil</li>
+                  <li class="burgercard-item">1 onion, peeled and finely chopped</li>
+                  <li class="burgercard-item">1 tsp mixed dried herbs</li>
+                  <li class="burgercard-item">1 egg, beaten</li>
+                  <li class="burgercard-item">4 slices mature Cheddar (optional)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="burgercard-container"> 
+              <h4 class="burgercard-heading">Special Beff Burger</h4>
+              <div class="special-offer__time-wrapper">
+                <svg width="16" height="16">
+                  <use xlink:href="../../img/sprite.svg#clock"></use>
+                </svg><span class="special-offer__time">25 min away</span>
+              </div>
+              <div class="burgercard-price">  <span class="special-offer__price">$89.00</span>
+                <button class="bem-button" type="button">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="burgercard-wrapper"> 
+            <div class="burgercard-box"> <img class="img-burger" src="../../img/fries.png" alt="Chicken Fry Pack" width="120" height="110"/>
+              <div class="burgerlist-wrappering">
+                <h4 class="burgercard-title">Ingredients:</h4>
+                <ul class="burgercard-list"> 
+                  <li class="burgercard-item">1/2 tbsp olive oil</li>
+                  <li class="burgercard-item">1 onion, peeled and finely chopped</li>
+                  <li class="burgercard-item">1 tsp mixed dried herbs</li>
+                  <li class="burgercard-item">1 egg, beaten</li>
+                  <li class="burgercard-item">4 slices mature Cheddar (optional)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="burgercard-container"> 
+              <h4 class="burgercard-heading">Chicken Fry Pack</h4>
+              <div class="special-offer__time-wrapper">
+                <svg width="16" height="16">
+                  <use xlink:href="../../img/sprite.svg#clock"></use>
+                </svg><span class="special-offer__time">25 min away</span>
+              </div>
+              <div class="burgercard-price">  <span class="special-offer__price">$89.00</span>
+                <button class="bem-button" type="button">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="burgercard-wrapper"> 
+            <div class="burgercard-box"> <img class="img-burger" src="../../img/sandwich.png" alt="Hotte Sendwise" width="120" height="110"/>
+              <div class="burgerlist-wrappering">
+                <h4 class="burgercard-title">Ingredients:</h4>
+                <ul class="burgercard-list"> 
+                  <li class="burgercard-item">1/2 tbsp olive oil</li>
+                  <li class="burgercard-item">1 onion, peeled and finely chopped</li>
+                  <li class="burgercard-item">1 tsp mixed dried herbs</li>
+                  <li class="burgercard-item">1 egg, beaten</li>
+                  <li class="burgercard-item">4 slices mature Cheddar (optional)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="burgercard-container"> 
+              <h4 class="burgercard-heading">Hotte Sendwise</h4>
+              <div class="special-offer__time-wrapper">
+                <svg width="16" height="16">
+                  <use xlink:href="../../img/sprite.svg#clock"></use>
+                </svg><span class="special-offer__time">25 min away</span>
+              </div>
+              <div class="burgercard-price">  <span class="special-offer__price">$89.00</span>
+                <button class="bem-button" type="button">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="burgercard-wrapper"> 
+            <div class="burgercard-box"> <img class="img-burger" src="../../img/roll.png" alt="Vegetable Roll" width="120" height="110"/>
+              <div class="burgerlist-wrappering">
+                <h4 class="burgercard-title">Ingredients:</h4>
+                <ul class="burgercard-list"> 
+                  <li class="burgercard-item">1/2 tbsp olive oil</li>
+                  <li class="burgercard-item">1 onion, peeled and finely chopped</li>
+                  <li class="burgercard-item">1 tsp mixed dried herbs</li>
+                  <li class="burgercard-item">1 egg, beaten</li>
+                  <li class="burgercard-item">4 slices mature Cheddar (optional)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="burgercard-container"> 
+              <h4 class="burgercard-heading">Vegetable Roll</h4>
+              <div class="special-offer__time-wrapper">
+                <svg width="16" height="16">
+                  <use xlink:href="../../img/sprite.svg#clock"></use>
+                </svg><span class="special-offer__time">25 min away</span>
+              </div>
+              <div class="burgercard-price">  <span class="special-offer__price">$89.00</span>
+                <button class="bem-button" type="button">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="burgercard-wrapper"> 
+            <div class="burgercard-box"> <img class="img-burger" src="../../img/chicken-leg-fry.png" alt="French Fry" width="120" height="110"/>
+              <div class="burgerlist-wrappering">
+                <h4 class="burgercard-title">Ingredients:</h4>
+                <ul class="burgercard-list"> 
+                  <li class="burgercard-item">1/2 tbsp olive oil</li>
+                  <li class="burgercard-item">1 onion, peeled and finely chopped</li>
+                  <li class="burgercard-item">1 tsp mixed dried herbs</li>
+                  <li class="burgercard-item">1 egg, beaten</li>
+                  <li class="burgercard-item">4 slices mature Cheddar (optional)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="burgercard-container"> 
+              <h4 class="burgercard-heading">French Fry</h4>
+              <div class="special-offer__time-wrapper">
+                <svg width="16" height="16">
+                  <use xlink:href="../../img/sprite.svg#clock"></use>
+                </svg><span class="special-offer__time">25 min away</span>
+              </div>
+              <div class="burgercard-price">  <span class="special-offer__price">$89.00</span>
+                <button class="bem-button" type="button">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="today-offer">
+        <div class="today-offer__flex-container">
+          <div class="today-offer__container"> 
+            <div class="today-offer__wrapper"> 
+              <h3 class="today-offer__title">Today's Offers.</h3>
+              <p class="today-offer__subtitle">It is a long established fact that a will distractedreadable content of a page when looking the layout</p>
+              <p class="today-offer__text">There are many variations passages of Lorem Ipsumavailable, but the majority have suffered alteration inform, by injected humour randomised words whichdon't look even slightly believable.</p>
+            </div>
+            <div class="special-offer__container"> 
+              <div class="special-offer__price-wrapper"><span class="special-offer__price">$89.00</span>
+                <div class="special-offer__time-wrapper">
+                  <svg width="16" height="16">
+                    <use xlink:href="../../img/sprite.svg#clock"></use>
+                  </svg><span class="special-offer__time">25 min away </span>
+                </div>
+              </div>
+              <button class="bem-button" type="button">Order Now</button>
+            </div>
+          </div>
+          <div class="today-offer__link-wrapper"> 
+            <div class="today-offer__bg"> </div><a class="today-offer__link" href="#"><span class="today-offer__heading">Buy Burger With Free “French Fry”</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="customer"> 
+        <div class="customer__wrapper"> 
+          <h3 class="customer__title">Some of Our Satisfied Customer.</h3>
+          <div class="wrapper-rectangle"><img class="img-rectangle" src="../../img/" alt="a"/>
+            <div class="rectangles"></div>
+            <div class="bg-rectangle"></div>
+          </div>
+          <div class="wrapper-rectangle"><img class="img-rectangle" src="../../img/" alt="a"/>
+            <div class="rectangles"></div>
+            <div class="bg-rectangle"></div>
+          </div>
+          <div class="wrapper-rectangle"><img class="img-rectangle" src="../../img/" alt="a"/>
+            <div class="rectangles"></div>
+            <div class="bg-rectangle"></div>
+          </div>
+          <div class="wrapper-rectangle"><img class="img-rectangle" src="../../img/" alt="a"/>
+            <div class="rectangles"></div>
+            <div class="bg-rectangle"></div>
+          </div>
+          <div class="customer__box">
+            <div class="customer__container"> 
+              <div class="wrapper-rectangle"><img class="img-rectangle" src="../../img/" alt="a"/>
+                <div class="rectangles"></div>
+                <div class="bg-rectangle"></div>
+              </div>
+              <p class="customer__review">If you are going to use a passage of cren you need toisn't anything embarrassing hidden in the middle of text  generatorsInternet tend repeat predefined chunks as necessary making thisthe first true generator on the Internet.</p><span class="customer__name">Kristyn Hairston </span><span class="customer__who">Happy Customer</span>
+            </div>
+            <div class="customer__container"> 
+              <div class="wrapper-rectangle"><img class="img-rectangle" src="../../img/" alt="a"/>
+                <div class="rectangles"></div>
+                <div class="bg-rectangle"></div>
+              </div>
+              <p class="customer__review">If you are going to use a passage of cren you need toisn't anything embarrassing hidden in the middle of text  generatorsInternet tend repeat predefined chunks as necessary making thisthe first true generator on the Internet.</p><span class="customer__name">Kristyn Hairston </span><span class="customer__who">Happy Customer  </span>
+            </div>
+            <div class="customer__container"> 
+              <div class="wrapper-rectangle"><img class="img-rectangle" src="../../img/" alt="a"/>
+                <div class="rectangles"></div>
+                <div class="bg-rectangle"></div>
+              </div>
+              <p class="customer__review">If you are going to use a passage of cren you need toisn't anything embarrassing hidden in the middle of text  generatorsInternet tend repeat predefined chunks as necessary making thisthe first true generator on the Internet.</p><span class="customer__name">Kristyn Hairston </span><span class="customer__who">Happy Customer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="../../js/jquery.min.js"></script>
+      <script src="../../js/slick/slick.min.js"></script>
+      <script src="../../js/carousel.js"></script>
     </main>
+    <footer class="page-footer"> 
+      <section class="page-footer__video">
+        <div class="video__wrapper">
+          <div class="video__box">
+            <h3 class="video__title">We Make Testy Food Everyday </h3>
+            <p class="video__text">If you are going to use a passage of you need tobe sure there isn't anything embarrassing hiddenin the middle of text.</p>
+          </div>
+          <div class="video__wrapper-movie"> <a class="video__link" href="#">
+              <svg class="video__icon" width="25" height="25"> 
+                <use xlink:href="../../img/sprite.svg#play"></use>
+              </svg></a><span class="video__text-intro">20 Minutes Intro</span></div>
+        </div>
+      </section>
+      <div class="page-footer__information">
+        <div class="page-footer__wrapper-social"> <img class="page-footer__logo" src="../../img/hotte-logo.svg" width="130" height="130" alt="Hotte Logo"><span class="page-footer__line"></span>
+          <p class="page-footer__text-one">If you are going to use a passage of need to be sure there isn't anything hidden in the middle text.</p>
+          <p class="page-footer__text-two">If you are going to use a passage of need to be sure there isn't.</p>
+          <div class="page-footer__box-social"> <a class="page-footer__link-fc" href="#">
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="../../img/sprite.svg#fc"></use>
+              </svg></a><a class="page-footer__link-pin" href="#">
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="../../img/sprite.svg#pin"></use>
+              </svg></a><a class="page-footer__link-drb" href="#">
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="../../img/sprite.svg#drb"></use>
+              </svg></a><a class="page-footer__link-tw" href="#">
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="../../img/sprite.svg#tw"></use>
+              </svg></a></div>
+        </div>
+        <div class="page-footer__contacts-wrapper"> 
+          <h4 class="page-footer__title-contact">Contact Us: </h4>
+          <svg class="page-footer__stick" width="150" height="70"> 
+            <use xlink:href="../../img/sprite.svg#stick"></use>
+          </svg>
+          <div class="page-footer__box-info"> 
+            <div class="page-footer__container"> <a class="page-footer__link" href="#">
+                <svg class="page-footer__icon-tel" width="15" height="15">
+                  <use xlink:href="../../img/sprite.svg#phone"></use>
+                </svg></a>
+              <p class="page-footer__text page-footer__text--big">+02 697 864 56<br>+880 659 468</p>
+            </div>
+            <div class="page-footer__container"> <a class="page-footer__link" href="#">
+                <svg class="page-footer__icon-mail" width="15" height="15">
+                  <use xlink:href="../../img/sprite.svg#mail"></use>
+                </svg></a>
+              <p class="page-footer__text">support@gmail.com hotte24@gmail.com</p>
+            </div>
+            <div class="page-footer__container"> <a class="page-footer__link" href="#">
+                <svg class="page-footer__icon-address" width="15" height="15">
+                  <use xlink:href="../../img/sprite.svg#point"></use>
+                </svg></a>
+              <p class="page-footer__text">855 Road, Brooklyn StreetNew York 600, Baraboo,Wisconsin(WI)</p>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__hours-wrapper">
+          <div class="page-footer__hours-circle"> </div>
+          <h4 class="page-footer__hours-title">Opening Hours: </h4>
+          <div class="page-footer__box-hours"> 
+            <div class="page-footer__wrapper-day"> <span class="page-footer__day">Sunday</span><span class="page-footer__dashed page-footer__time--red">_ _ _ _ _ _ _</span>
+              <time class="page-footer__time page-footer__time--red">Closing Day</time>
+            </div>
+            <div class="page-footer__wrapper-day"> <span class="page-footer__day">Monday</span><span class="page-footer__dashed">_ _ _ _ _ _ _</span>
+              <time class="page-footer__time">8 am - 10 am  </time>
+            </div>
+            <div class="page-footer__wrapper-day"> <span class="page-footer__day">Tuesday</span><span class="page-footer__dashed">_ _ _ _ _ _ _</span>
+              <time class="page-footer__time">8 am - 10 am   </time>
+            </div>
+            <div class="page-footer__wrapper-day"> <span class="page-footer__day">Wednesday</span><span class="page-footer__dashed">_ _ _ _ _ _ _</span>
+              <time class="page-footer__time">8 am - 10 am   </time>
+            </div>
+            <div class="page-footer__wrapper-day"> <span class="page-footer__day page-footer__time--org">Thursday</span><span class="page-footer__dashed page-footer__time--org">_ _ _ _ _ _ _</span>
+              <time class="page-footer__time page-footer__time--org">8 am - 10 am   </time>
+            </div>
+            <div class="page-footer__wrapper-day"> <span class="page-footer__day">Friday</span><span class="page-footer__dashed">_ _ _ _ _ _ _</span>
+              <time class="page-footer__time">8 am - 10 am   </time>
+            </div>
+            <div class="page-footer__wrapper-day"> <span class="page-footer__day">Saturday  </span><span class="page-footer__dashed">_ _ _ _ _ _ _</span>
+              <time class="page-footer__time">8 am - 10 am </time>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        <div class="page-footer__wrapper-copyright"> 
+          <p class="page-footer__copyright-text">Copyright 2020. All Rights Reserved.</p>
+          <p class="page-footer__copyright-policy">Terms &amp Conditions   |   Privacy Policy                                                                                               </p>
+        </div>
+      </div>
+    </footer>
     <script src="/js/main.js"></script>
   </body>
 </html>

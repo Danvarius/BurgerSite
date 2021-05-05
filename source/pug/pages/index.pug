@@ -1,7 +1,10 @@
 extends ./../main/_main.pug
 
 include ./../mixin/button.pug
-
+include ./../mixin/rectangle.pug
+include ./../mixin/advantage.pug
+include ./../mixin/burgercard.pug
+      
 block main 
    section.preview 
       img.preview__bg(src="img/bg.jpg", alt="")
@@ -14,17 +17,81 @@ block main
       .special-offer__wrapper
          .special-offer__burger-box 
             img.special-offer__img-burger(src="img/burger.png", alt="", width="100", height="100")
-            .special-offer__cola-wrapper 
+            +rectangle('', 'Coca-Cola.png', ' drink Coca-Cola')
          .special-offer__proposal
             .special-offer__icon-wrapper 
-            h3.special-offer__title Today's Special Surprise For You 
+            h3.special-offer__title Today's Special Surprise For You! 
             p.special-offer__text It is a long established fact that a will distractedreadable content of a page when looking at its the layoutusing Lorem Ipsum is that it has a normal distributionas opposed to using making it look like.    
             .special-offer__container 
                .special-offer__price-wrapper
-                  span.special-offer__price 89.00
-                  span.special-offer__time 25 min away 
+                  span.special-offer__price $89.00
+                  .special-offer__time-wrapper
+                     svg(width="16" height="16")
+                        use(xlink:href="../../img/sprite.svg#clock")
+                     span.special-offer__time 25 min away 
                .special-offer__wrapper-plus
+                  .special-offer__box-plus
                   span.special-offer__plus +
                   span.special-offer__counter 02
-               +button('Order Now') 
+               +button('Order Now')
+         .special-offer__advantages
+            +advantage('honey-icon.png', 'Choose Food', 'It is a long establed factwill distracted readablelooking at layou.')
+            +advantage('burger-icon.png', 'Place Order', 'It is a long establed factwill distracted readablelooking at layou.')
+            +advantage('appliances-icon.png', 'Receive & Go', 'It is a long establed factwill distracted readablelooking at layou.')
+   section.regular-menu 
+      h3.regular-menu__title Regular Menu's of Hotte.
+      p.regular-menu__text There are many variations of passages of Lorem Ipsum available butmajority have suffered alteration injected humour          
+      .regular-menu__wrapper
+         +burgercard('chicken-burger.png', 'Chicken Burger', '1/2 tbsp olive oil', '1 onion, peeled and finely chopped', '1 tsp mixed dried herbs', '1 egg, beaten', '4 slices mature Cheddar (optional)', 'Chicken Burger')
+         +burgercard('burger.png', 'Special Beef Burger', '1/2 tbsp olive oil', '1 onion, peeled and finely chopped', '1 tsp mixed dried herbs', '1 egg, beaten', '4 slices mature Cheddar (optional)', 'Special Beff Burger')
+         +burgercard('fries.png', 'Chicken Fry Pack', '1/2 tbsp olive oil', '1 onion, peeled and finely chopped', '1 tsp mixed dried herbs', '1 egg, beaten', '4 slices mature Cheddar (optional)', 'Chicken Fry Pack')
+         +burgercard('sandwich.png', 'Hotte Sendwise', '1/2 tbsp olive oil', '1 onion, peeled and finely chopped', '1 tsp mixed dried herbs', '1 egg, beaten', '4 slices mature Cheddar (optional)', 'Hotte Sendwise')
+         +burgercard('roll.png', 'Vegetable Roll', '1/2 tbsp olive oil', '1 onion, peeled and finely chopped', '1 tsp mixed dried herbs', '1 egg, beaten', '4 slices mature Cheddar (optional)', 'Vegetable Roll')
+         +burgercard('chicken-leg-fry.png', 'French Fry', '1/2 tbsp olive oil', '1 onion, peeled and finely chopped', '1 tsp mixed dried herbs', '1 egg, beaten', '4 slices mature Cheddar (optional)', 'French Fry')
+   section.today-offer
+      .today-offer__flex-container
+         .today-offer__container 
+            .today-offer__wrapper 
+               h3.today-offer__title Today's Offers.
+               p.today-offer__subtitle It is a long established fact that a will distractedreadable content of a page when looking the layout
+               p.today-offer__text There are many variations passages of Lorem Ipsumavailable, but the majority have suffered alteration inform, by injected humour randomised words whichdon't look even slightly believable.
+            .special-offer__container 
+               .special-offer__price-wrapper
+                  span.special-offer__price $89.00
+                  .special-offer__time-wrapper
+                     svg(width="16" height="16")
+                        use(xlink:href="../../img/sprite.svg#clock")
+                     span.special-offer__time 25 min away 
+               +button('Order Now')
+         .today-offer__link-wrapper 
+            .today-offer__bg 
+            a.today-offer__link(href="#")
+               span.today-offer__heading Buy Burger With Free “French Fry”
+   section.customer 
+      .customer__wrapper 
+         h3.customer__title Some of Our Satisfied Customer.
+         +rectangle('', '', '')
+         +rectangle('', '', '')
+         +rectangle('', '', '')
+         +rectangle('', '', '')
+         .customer__box
+            .customer__container 
+               +rectangle('', '', '')
+               p.customer__review If you are going to use a passage of cren you need toisn't anything embarrassing hidden in the middle of text  generatorsInternet tend repeat predefined chunks as necessary making thisthe first true generator on the Internet.
+               span.customer__name Kristyn Hairston 
+               span.customer__who Happy Customer
+            .customer__container 
+               +rectangle('', '', '')
+               p.customer__review If you are going to use a passage of cren you need toisn't anything embarrassing hidden in the middle of text  generatorsInternet tend repeat predefined chunks as necessary making thisthe first true generator on the Internet.
+               span.customer__name Kristyn Hairston 
+               span.customer__who Happy Customer  
+            .customer__container 
+               +rectangle('', '', '')
+               p.customer__review If you are going to use a passage of cren you need toisn't anything embarrassing hidden in the middle of text  generatorsInternet tend repeat predefined chunks as necessary making thisthe first true generator on the Internet.
+               span.customer__name Kristyn Hairston 
+               span.customer__who Happy Customer
+   script(src="../../js/jquery.min.js")
+   script(src="../../js/slick/slick.min.js")
+   script(src="../../js/carousel.js")
+
 

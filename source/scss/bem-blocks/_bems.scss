@@ -1,3 +1,5 @@
+// Pug Button
+
 .bem-button {
    display: block;
    padding: 15px 30px;
@@ -5,10 +7,339 @@
    border-radius: 40px;
    border: none;
    outline: none;
+   
    background-color: #FF702A;
 
    font-family: "Poppins", sans-serif;
    font-size: 15px;
    text-align: center;
    color: #ffffff;
+   opacity: 1;
+
+   &:hover {
+      background-color: #dd6123;
+      transition: all 0.3s ease;
+   }
+
+   &:focus {
+      border: 1px solid #ffffff;
+   }
+
+   &:active {
+      opacity: 0.8;
+      transition: none;
+   }
+}
+
+// Pug Rectagle
+
+.wrapper-rectangle {
+   position: relative;
+   width: 80px;
+   height: 80px;
+
+   .img-rectangle {
+      display: none;
+   }
+
+   .rectangles {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+
+      z-index: 2;
+
+      width: 80px;
+      height: 80px;
+
+      border-radius: 12px;
+   
+      background-color: #FF702A;
+   }
+
+   .bg-rectangle {
+      position: relative;
+      z-index: 1;
+
+      width: 80px;
+      height: 80px;
+
+      transform: rotate(45deg);
+   
+      border: 2px solid #F8D8C9;
+      border-radius: 12px;
+   }
+}
+
+// Pug Advantage
+
+.advantage-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 100%;
+   max-width: 280px;
+   margin: 0 auto;
+}
+
+@media (min-width: 1300px) {
+   .advantage-wrapper {
+      margin: 0;
+      max-width: 340px;
+   }
+}
+
+.advantage-box {
+   width: 70px;
+   height: 70px;
+   margin: 0 auto 20px auto;
+   border-radius: 35px;
+
+   background-color: #FFA77B;
+
+   .advantage-icon {
+      display: block;
+      margin: 15px auto 0 auto;
+   }
+}
+
+.advantage-container {
+   max-width: 260px;
+   margin: 0 auto;
+
+   .advantage-title {
+      margin-bottom: 15px;
+
+      font-size: 25px;
+      font-weight: 700;
+      color: #ffffff;
+   }
+
+   .advantage-text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #ffffff;
+   }
+}
+
+@media (min-width: 1300px) {
+   .advantage-container {
+      max-width: 230px;
+   }
+}
+
+// Pug Burgercard
+
+.burgercard-wrapper {
+   width: 100%;
+   max-width: 450px;
+   padding: 15px;
+   margin: 0 auto 25px auto;
+   border-radius: 15px;
+   box-sizing: border-box;
+   justify-self: center;
+
+   background-color: #FEEEE7;
+}
+
+@media (min-width: 768px) {
+   .burgercard-wrapper {
+      width: 330px;
+      margin: 0 0 10% 0;
+   }
+}
+
+.burgercard-box {
+   position: relative;
+
+   width: 100%;
+   height: 189px;
+   border-radius: 15px;
+   padding-top: 30px;
+   margin-bottom: 20px;
+
+   background-color: #ffffff;
+
+   cursor: pointer;
+
+   .img-burger {
+
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 200px;
+      height: auto;
+   }
+}
+
+.burgerlist-wrappering {
+   position: absolute;
+   top: 0;
+   z-index: 2;
+
+   padding: 20px 20px;
+   height: 0;
+   width: 90.50%;
+
+   border-radius: 15px;
+   opacity: 0;
+   transition: all 0.4s ease;
+
+   background: linear-gradient(20deg, #CC0E15, #FF702A);
+
+   color: #ffffff;
+
+   .burgercard-title {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 2px;
+
+      margin-bottom: 15px;
+   }
+
+   .burgercard-item {
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+   }
+}
+
+@media(min-width: 768px) {
+   .burgerlist-wrappering {
+      width: auto;
+   }
+}
+
+.burgercard-box:hover .burgerlist-wrappering {
+   opacity: 0.9;
+   height: 180px;
+   transition: height 0.4s ease, opacity 0.6s ease;
+}
+
+.burgercard-container {
+   padding: 20px;
+   border-radius: 15px;
+
+   background-color: #ffffff;
+}
+
+.burgercard-heading {
+   margin-bottom: 10px;
+
+   font-size: 23px;
+   font-weight: 700;
+   line-height: 27px;
+   color: #000000;
+}
+
+.burgercard-price {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.burgercard-price  .special-offer__price {
+   width: 120px;
+   align-self: center;
+   margin-bottom: 15px;
+}
+
+@media (min-width: 370px) {
+   .burgercard-price  .special-offer__price {
+      margin-bottom: 0;
+   }
+}
+
+//Pug Cardchef
+
+.chefs-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 15px;
+   border-radius: 15px;
+   margin-bottom: 30px;
+
+   background-color: #FEEEE7;
+
+   font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) {
+   .chefs-wrapper {
+      padding: 20px;
+   }
+}
+
+@media (min-width: 1300px) {
+   .chefs-wrapper {
+      width: 45%;
+      text-align: left;
+   }
+}
+
+.chefs-container {
+   width: 100%;
+
+   .chefs__img-wrapper {
+      margin-bottom: 25px;
+      border-radius: 15px;
+      background-color: #ffffff;
+
+      .chefs-img {
+         display: block;
+         margin: 0 auto;
+      }
+   }
+
+   .chefs-name {
+      margin-bottom: 15px;
+
+      font-size: 25px;
+      font-weight: 700;
+      color: #0A0626;
+   }
+
+   .chefs-subtitle {
+      display: block;
+      margin-bottom: 25px;
+
+      font-size: 16px;
+      font-weight: 400;
+   }
+}
+
+@media (min-width: 768px) {
+
+   .chefs-container {
+      width: 30%;
+   }
+}
+
+@media (min-width: 1300px) {
+
+   .chefs-container {
+      width: 33%;
+      text-align: center;
+   }
+}
+
+@media (min-width: 768px) {
+
+   .chefs-box {
+      width: 60%;
+      align-self: center;
+   }
+}
+
+.chefs-text-about {
+   margin-bottom: 20px;
+
+   font-size: 17px;
+   line-height: 30px;
+   color: #494442;
+}
+
+.chefs-box .page-footer__box-social {
+   margin: 0 auto 15px;
 }

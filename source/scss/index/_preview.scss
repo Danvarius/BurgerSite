@@ -61,12 +61,12 @@
          color: #ffffff;
 
          &:hover {
-            padding: 22px 32px;
+            background: linear-gradient(45deg, $basic-orange, #EC2734);
             transition: all 0.2s ease;
          }
 
          &:focus {
-            border: 1px solid #ffffff;
+            outline: 1px solid #ffffff;
          }
 
          &:active {
@@ -144,9 +144,11 @@
       }
 
       .preview__wrapper {
-         padding: 150px 0 40px 130px;
+         max-width: 1120px;
+         padding: 150px 0 40px 20px;
+         margin: 0 auto;
 
-         background-position: 60% 100%;
+         background-position: 80% 100%;
          background-size: 380px 380px;
 
          .preview__title {
@@ -167,10 +169,6 @@
          .preview__button {
             margin-left: 12px;
             padding: 20px 40px;
-
-            &:hover {
-               padding: 22px 42px;
-            }
          }
       }
    }

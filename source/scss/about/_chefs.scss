@@ -1,0 +1,55 @@
+.chefs {
+   max-width: 400px;
+   margin: 0 auto 60px;
+   padding: 0 20px;
+
+   text-align: center;
+   color: $basic-grey;
+
+   font-family: "Poppins", sans-serif;
+
+   .chefs__title {
+      margin-bottom: 30px;
+
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px;
+   }
+
+   .chefs__text {
+      margin-bottom: 40px;
+
+      font-size: 17px;
+      line-height: 30px;
+   }
+}
+
+.chefs__wrapper-about {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+@media (min-width: $tablet) {
+   .chefs {
+      max-width: 790px;
+
+      .chefs__title {
+         width: 600px;
+         margin: 0 auto 30px;
+      }
+
+      .chefs__text {
+         width: 550px;
+         margin: 0 auto 70px;
+      }
+   }
+}
+
+@media (min-width: $mini-desktop) {
+   .chefs {
+      max-width: 1200px;
+   }
+}
+
+

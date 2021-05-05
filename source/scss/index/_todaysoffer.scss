@@ -1,0 +1,268 @@
+.today-offer {
+   margin-bottom: 50px;
+
+   background-color: $basic-orange;
+}
+
+.today-offer__flex-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 40px 20px;
+
+   font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: $tablet) {
+
+   .today-offer__flex-container {
+      padding: 60px 40px 0 40px;
+      margin: 0 auto;
+      max-width: 1030px;
+   }
+}
+
+@media (min-width: $mini-desktop) {
+
+   .today-offer__flex-container {
+      max-width: 1200px;
+      padding: 80px 60px 40px 60px;
+   }
+}
+
+.today-offer__container {
+   margin-bottom: 50px;
+}
+
+@media (min-width: $tablet) {
+   .today-offer__container {
+      width: 50%;
+   }
+}
+
+.today-offer__container .special-offer__container {
+   justify-content: space-between;
+   box-sizing: border-box;
+}
+
+@media (min-width: $tablet) {
+   .today-offer__container .special-offer__container {
+      margin: 0;
+   }
+}
+
+.today-offer__container .special-offer__time-wrapper {
+   max-width: 100px;
+}
+
+@media (min-width: 324px) {
+   .today-offer__container .special-offer__price-wrapper {
+      width: 140px;
+   }
+}
+
+@media (min-width: 360px) {
+   .today-offer__container .special-offer__price-wrapper {
+      margin-bottom: 0;
+   }
+}
+
+.today-offer__wrapper {
+
+   .today-offer__title {
+      margin-bottom: 25px;
+
+      font-size: 40px;
+      line-height: 47px;
+      font-weight: 700;
+      color: #ffffff;
+   }
+
+   .today-offer__subtitle, .today-offer__text {
+      margin-bottom: 20px;
+
+      font-size: 17px;
+      line-height: 30px;
+      color: #ffffff;
+   }
+
+   .today-offer__text {
+      margin-bottom: 30px;
+   }
+}
+
+@media (min-width: $mini-desktop) {
+   .today-offer__wrapper {
+
+      .today-offer__title {
+         margin-bottom: 30px;
+      }
+
+      .today-offer__text {
+         margin-bottom: 40px;
+      }
+   }
+}
+
+.today-offer__box {
+   padding: 20px;
+   border-radius: 15px;
+
+   background-color: #fcebeb;
+}
+
+.today-offer__link-wrapper {
+   position: relative;
+
+   width: 300px;
+   max-width: 280px;
+   min-height: 300px;
+   margin: 0 auto;
+
+   .today-offer__bg {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin: 0 auto;
+      opacity: 1;
+
+      background-color: #FF7B3B;
+
+      animation: bounce infinite 1s ease;
+   }
+
+   .today-offer__link {
+      position: absolute;
+      top: 26px;
+      left: 40px;
+
+      display: block;
+      width: 200px;
+      min-height: 200px;
+      border-radius: 50%;
+
+      background: linear-gradient(20deg, #CC0E15, #FF702A);
+
+      text-decoration: none;
+      text-align: center;
+      color: #ffffff;
+
+      &:hover {
+         background: none;
+         background-color: $basic-pink;
+         transition: all 0.5s ease;
+
+         color: $basic-grey;
+      }
+
+      .today-offer__heading {
+         display: block;
+         margin: 48px auto 0 auto;
+         width: 80%;
+
+         font-size: 24px;
+         line-height: 34px;
+         font-weight: 600;
+      }
+   }
+}
+
+@media (min-width: $tablet) {
+
+   .today-offer__link-wrapper {
+      align-self: center;
+   }
+}
+
+@media (min-width: $mini-desktop) {
+
+   .today-offer__link-wrapper {
+      width: 350px;
+      max-width: 350px;
+      height: 350px;
+
+      .today-offer__bg {
+         width: 300px;
+         height: 300px;
+      }
+
+      .today-offer__link {
+         top: 29px;
+         left: 50px;
+
+         width: 250px;
+         height: 250px;
+
+         .today-offer__heading {
+            margin-top: 85px;
+         }
+      }
+   }
+}
+
+@keyframes bounce {
+   from {
+      width: 250px;
+      height: 250px;
+      opacity: 1;
+   }
+
+   25% {
+      width: 260px;
+      height: 260px;
+      opacity: 0.8;
+   }
+
+   50% {
+      width: 250px;
+      height: 250px;
+      opacity: 1;
+   }
+
+   75% {
+      width: 280px;
+      height: 280px;
+      opacity: 0.6;
+   }
+
+   to {
+      width: 250px;
+      height: 250px;
+      opacity: 1;
+   }
+}
+
+@media (min-width: $mini-desktop) {
+
+   @keyframes bounce {
+      from {
+         width: 300px;
+         height: 300px;
+         opacity: 1;
+      }
+   
+      25% {
+         width: 310px;
+         height: 310px;
+         opacity: 0.8;
+      }
+   
+      50% {
+         width: 300px;
+         height: 300px;
+         opacity: 1;
+      }
+   
+      75% {
+         width: 330px;
+         height: 330px;
+         opacity: 0.6;
+      }
+   
+      to {
+         width: 300px;
+         height: 300px;
+         opacity: 1;
+      }
+   }
+}

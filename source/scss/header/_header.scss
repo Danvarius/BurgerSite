@@ -81,7 +81,7 @@
       display: flex;
       justify-content: space-between;
       padding: 0 0 30px 0;
-      max-width: 950px;
+      max-width: 1100px;
       margin: 0 auto;
    }
 }
@@ -114,6 +114,10 @@
    display: flex;
    justify-content: space-between;
    margin-bottom: 12px;
+
+   .page-header__clock {
+      fill: $basic-green;
+   }
 
    .page-header__text {
       align-self: center;

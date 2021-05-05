@@ -1,0 +1,48 @@
+.reviews {
+   padding: 40px 20px;
+   margin-bottom: 60px;
+
+   background-color: $basic-orange;
+
+   font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: $tablet) {
+   .reviews {
+      padding: 60px 40px;
+   }
+}
+
+@media (min-width: $mini-desktop) {
+   .reviews {
+      padding: 70px 90px;
+      margin-bottom: 90px;
+   }
+}
+
+.reviews__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+   text-align: center;
+}
+
+@media (min-width: $mini-desktop) {
+   .reviews__wrapper {
+      max-width: 1150px;
+      margin: 0 auto;
+
+      text-align: left;
+   }
+}
+
+.reviews__wrapper .advantage-wrapper {
+   margin-bottom: 35px;
+}
+
+@media (min-width: $mini-desktop) {
+   .reviews__wrapper .advantage-wrapper {
+      margin-bottom: 0px;
+   }
+}

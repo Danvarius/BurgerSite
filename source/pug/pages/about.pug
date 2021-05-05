@@ -1,0 +1,43 @@
+extends ./../main/_main.pug
+
+include ./../mixin/advantage.pug
+include ./../mixin/cardchef.pug
+
+block main 
+   section.about
+      .about-wrapper 
+         h2.about-title About Us
+   section.reviews
+      .reviews__wrapper 
+         +advantage('honey-icon.png', 'Choose Food', 'It is a long establed factwill distracted readablelooking at layou.')
+         +advantage('burger-icon.png', 'Place Order', 'It is a long establed factwill distracted readablelooking at layou.')
+         +advantage('appliances-icon.png', 'Receive & Go', 'It is a long establed factwill distracted readablelooking at layou.')       
+   section.experience 
+      .experience__wrapper
+         .experience__icon-one 
+         .experience__icon-two
+         ul.experience__list 
+            li.experience__item 
+               button.experience__button(type="button") The Story
+            li.experience__item
+               button.experience__button(type="button") Our Mission 
+            li.experience__item
+               button.experience__button(type="button") Our Vission
+         h3.experience__title Hotte have 25+ years of experience.
+         p.experience__text Lorem ipsum dolor sit amet, consectetuer adipiscing elitdictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus egetcursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat turpis. Integer rutrum ante eu lacus. Vestibulum libero nisl, porta velscelerisque eget, malesuada at, neque.
+         p.experience__text Lorem ipsum dolor sit amet, consectetuer adipiscing elitdictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus egetcursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat.
+      .experience__box 
+         .experience__rectangle 
+         .experience__bg
+   section.chefs 
+      h3.chefs__title Special &amp; Awarded Chefs of Hotte
+      p.chefs__text There are many variations of passages of Lorem Ipsum available butmajority have suffered alteration injected humour
+      .chefs__wrapper-about
+         +chefs('cook-one.png', 'a photo of cook Sanlia Weiss', 'Sanlia Weiss', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-two.png', 'a photo of cook Maren Britt', 'Maren Britt', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-three.png', 'a photo of cook Candis Dode', 'Candis Dode', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-four.png', 'a photo of cook Arvilla Vail', 'Arvilla Vail', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-five.png', 'a photo of cook Nilda Merrill', 'Nilda Merrill', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-six.png', 'a photo of cook Danyell Gillen', 'Danyell Gillen', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+
+

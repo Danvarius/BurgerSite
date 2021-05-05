@@ -1,0 +1,24 @@
+mixin chefs(img,alt,title,subtitle,textone,texttwo)
+
+   .chefs-wrapper
+      .chefs-container 
+         .chefs__img-wrapper 
+            img.chefs-img(src="../../img/" + img, alt="" + alt, width="150", height="220")
+         h3.chefs-name #{title}
+         span.chefs-subtitle #{subtitle}
+      .chefs-box 
+         p.chefs-text-about #{textone}
+         p.chefs-text-about #{texttwo}
+         .page-footer__box-social 
+            a.page-footer__link-fc(href="#")
+               svg.page-footer__icon(width="20", height="20")
+                  use(xlink:href="../../img/sprite.svg#fc")
+            a.page-footer__link-pin(href="#")
+               svg.page-footer__icon(width="20", height="20")
+                  use(xlink:href="../../img/sprite.svg#pin")
+            a.page-footer__link-drb(href="#")
+               svg.page-footer__icon(width="20", height="20")
+                  use(xlink:href="../../img/sprite.svg#drb")
+            a.page-footer__link-tw(href="#")
+               svg.page-footer__icon(width="20", height="20")
+                  use(xlink:href="../../img/sprite.svg#tw")      

@@ -1,0 +1,24 @@
+include ./../mixin/button.pug
+
+mixin burgercard(img,alt,one,two,three,four,five,heading)
+
+   .burgercard-wrapper 
+      .burgercard-box 
+         img.img-burger(src="../../img/" + img, alt="" + alt, width="120", height="110")
+         .burgerlist-wrappering
+            h4.burgercard-title Ingredients:
+            ul.burgercard-list 
+               li.burgercard-item #{one}
+               li.burgercard-item #{two}
+               li.burgercard-item #{three}
+               li.burgercard-item #{four}
+               li.burgercard-item #{five}
+      .burgercard-container 
+         h4.burgercard-heading #{heading}
+         .special-offer__time-wrapper
+            svg(width="16" height="16")
+               use(xlink:href="../../img/sprite.svg#clock")
+            span.special-offer__time 25 min away
+         .burgercard-price   
+            span.special-offer__price $89.00
+            +button('Order Now')             

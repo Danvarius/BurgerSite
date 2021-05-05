@@ -1,0 +1,159 @@
+.customer__wrapper {
+   position: relative;
+
+   max-width: 1200px;
+   margin: 0 auto 50px auto;
+   padding: 40px 20px;
+
+   font-family: "Poppins", sans-serif;
+   text-align: center;
+
+   .customer__title {
+      max-width: 430px;
+      margin: 0 auto 40px auto;
+
+      font-size: 40px;
+      line-height: 47px;
+      font-weight: 700;
+   }
+}
+
+.customer__wrapper > .wrapper-rectangle {
+   position: absolute;
+   top: 0;
+
+   display: none;
+}
+
+@media (min-width: $mini-desktop) {
+   .customer__wrapper > .wrapper-rectangle {
+      display: block;
+   }
+}
+
+.customer__wrapper > .wrapper-rectangle:nth-child(2) {
+   top: 120px;
+   right: 100px;
+
+   transform: rotate(30deg);
+}
+
+.customer__wrapper > .wrapper-rectangle:nth-child(3) {
+   top: 450px;
+   left: 100px;
+
+   transform: rotate(60deg);
+}
+
+.customer__wrapper > .wrapper-rectangle:nth-child(4) {
+   top: 450px;
+   right: 100px;
+
+   transform: rotate(30deg);
+}
+
+.customer__wrapper > .wrapper-rectangle:nth-child(5) {
+   top: 120px;
+   left: 100px;
+
+   transform: rotate(60deg);
+}
+
+.customer__wrapper .bg-rectangle {
+   position: absolute;
+   top: 0;
+}
+
+.customer__box {
+   position: relative;
+
+   padding: 50px 25px;
+   margin: 0 auto;
+   border-radius: 15px;
+
+   background-color: $basic-pink;
+}
+
+@media (min-width: $tablet) {
+
+   .customer__box {
+      max-width: 680px;
+   }
+}
+
+.customer__container {
+
+   .customer__review {
+      max-width: 585px;
+      margin: 0 auto 25px auto;
+
+      font-size: 17px;
+      line-height: 30px;
+      font-weight: 400;
+      color: #807670;
+   }
+
+   .customer__name {
+      display: block;
+      margin-bottom: 15px;
+
+      font-size: 19px;
+      font-weight: 600;
+   }
+
+   .customer__who {
+      font-size: 14px;
+      color: #807670;
+   }
+}
+
+.customer__container .wrapper-rectangle {
+   position: relative;
+   margin: 12px auto 50px auto;
+}
+
+.customer__container .bg-rectangle {
+   position: absolute;
+   top: 0;
+}
+
+.prev, .next {
+   position: absolute;
+   top: 14%;
+   z-index: 2;
+
+   display: block;
+   padding: 10px;
+   border-radius: 50%;
+
+   cursor: pointer;
+   background-color: #ffffff;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+   right: 20px;
+}
+
+@media (min-width: 346px) {
+   .prev, .next {
+      top: 15%;
+   }
+}
+
+@media (min-width: 495px) {
+   .prev, .next {
+      top: 19%;
+   }
+
+   .prev {
+      left: 100px;
+    }
+    
+    .next {
+       right: 100px;
+    }
+}
