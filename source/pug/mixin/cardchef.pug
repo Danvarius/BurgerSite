@@ -1,24 +1,26 @@
-mixin chefs(img,alt,title,subtitle,textone,texttwo)
+mixin chefs(webp,img,alt,title,subtitle,textone,texttwo)
 
    .chefs-wrapper
       .chefs-container 
-         .chefs__img-wrapper 
-            img.chefs-img(src="../../img/" + img, alt="" + alt, width="150", height="220")
+         .chefs__img-wrapper
+            picture 
+               source(type="image/webp", srcset="../../img/" + webp) 
+               img.chefs-img(src="../../img/" + img, alt="" + alt, width="150", height="220", loading="lazy")
          h3.chefs-name #{title}
          span.chefs-subtitle #{subtitle}
       .chefs-box 
          p.chefs-text-about #{textone}
          p.chefs-text-about #{texttwo}
          .page-footer__box-social 
-            a.page-footer__link-fc(href="#")
+            a.page-footer__link-fc(href="https://www.facebook.com/", aria-label="link of facebook")
                svg.page-footer__icon(width="20", height="20")
                   use(xlink:href="../../img/sprite.svg#fc")
-            a.page-footer__link-pin(href="#")
+            a.page-footer__link-pin(href="https://www.pinterest.ru/", aria-label="link of pinterest")
                svg.page-footer__icon(width="20", height="20")
                   use(xlink:href="../../img/sprite.svg#pin")
-            a.page-footer__link-drb(href="#")
+            a.page-footer__link-drb(href="https://dribbble.com/", aria-label="link of dribble")
                svg.page-footer__icon(width="20", height="20")
                   use(xlink:href="../../img/sprite.svg#drb")
-            a.page-footer__link-tw(href="#")
+            a.page-footer__link-tw(href="https://twitter.com/", aria-label="link of twitter")
                svg.page-footer__icon(width="20", height="20")
                   use(xlink:href="../../img/sprite.svg#tw")      

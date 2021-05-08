@@ -1,0 +1,21 @@
+extends ./../main/_main.pug
+
+include ./../mixin/newscard.pug
+
+block variables 
+    - const title = "Hotte | News"
+
+block main 
+   section.previews
+      .previews-wrapper 
+         h2.previews-title News
+   section.news 
+      +newscard('news-one.webp', 'news-one.jpg', 'a picture of grapes', '2021-09-22', '22 August, 2021', 'Here are the best onlinereservation systems.', 'Lorem ipsum dolor sit amet consecteradipiscing elit dictum magna laoreetmalesuada at neque.')
+      +newscard('news-two.webp', 'news-two.jpg', 'a picture of glass', '2021-10-14', '14 October, 2021', 'You can integrate saved ofcustomer information', 'Lorem ipsum dolor sit amet consecteradipiscing elit dictum magna laoreetmalesuada at neque.')
+      +newscard('news-three.webp', 'news-three.jpg', 'a picture of umbrella', '2021-07-06', '6 June, 2021', 'As you do your research,there are some key.', 'Lorem ipsum dolor sit amet consecteradipiscing elit dictum magna laoreetmalesuada at neque.')
+      +newscard('news-one.webp', 'news-one.jpg', 'a picture of grapes', '2021-09-22', '22 August, 2021', 'Here are the best onlinereservation systems.', 'Lorem ipsum dolor sit amet consecteradipiscing elit dictum magna laoreetmalesuada at neque.')
+      +newscard('news-two.webp', 'news-two.jpg', 'a picture of glass', '2021-10-14', '14 October, 2021', 'You can integrate saved ofcustomer information', 'Lorem ipsum dolor sit amet consecteradipiscing elit dictum magna laoreetmalesuada at neque.')
+      +newscard('news-three.webp', 'news-three.jpg', 'a picture of umbrella', '2021-07-06', '6 June, 2021', 'As you do your research,there are some key.', 'Lorem ipsum dolor sit amet consecteradipiscing elit dictum magna laoreetmalesuada at neque.')
+      +newscard('news-one.webp', 'news-one.jpg', 'a picture of grapes', '2021-09-22', '22 August, 2021', 'Here are the best onlinereservation systems.', 'Lorem ipsum dolor sit amet consecteradipiscing elit dictum magna laoreetmalesuada at neque.')
+      +newscard('news-two.webp', 'news-two.jpg', 'a picture of glass', '2021-10-14', '14 October, 2021', 'You can integrate saved ofcustomer information', 'Lorem ipsum dolor sit amet consecteradipiscing elit dictum magna laoreetmalesuada at neque.')
+      +newscard('news-three.webp', 'news-three.jpg', 'a picture of umbrella', '2021-07-06', '6 June, 2021', 'As you do your research,there are some key.', 'Lorem ipsum dolor sit amet consecteradipiscing elit dictum magna laoreetmalesuada at neque.')      

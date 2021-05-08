@@ -1,10 +1,12 @@
 include ./../mixin/button.pug
 
-mixin burgercard(img,alt,one,two,three,four,five,heading)
+mixin burgercard(webp,img,alt,one,two,three,four,five,heading)
 
    .burgercard-wrapper 
-      .burgercard-box 
-         img.img-burger(src="../../img/" + img, alt="" + alt, width="120", height="110")
+      .burgercard-box
+         picture 
+            source(type="image/webp", srcset="../../img/" + webp) 
+            img.img-burger(src="../../img/" + img, alt="" + alt, width="120", height="110", loading="lazy")
          .burgerlist-wrappering
             h4.burgercard-title Ingredients:
             ul.burgercard-list 

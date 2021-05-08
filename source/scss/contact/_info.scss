@@ -1,0 +1,48 @@
+.info {
+   padding: 40px 20px;
+   margin-bottom: 60px;
+
+   background-color: $basic-orange;
+
+   font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: $tablet) {
+   .info {
+      padding: 60px 40px;
+   }
+}
+
+@media (min-width: $mini-desktop) {
+   .info {
+      padding: 70px 90px;
+      margin-bottom: 90px;
+   }
+}
+
+.info__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+   text-align: center;
+}
+
+@media (min-width: $mini-desktop) {
+   .info__wrapper {
+      max-width: 1120px;
+      margin: 0 auto;
+
+      text-align: left;
+   }
+}
+
+.info__wrapper .advantage-wrapper {
+   margin-bottom: 35px;
+}
+
+@media (min-width: $mini-desktop) {
+   .info__wrapper .advantage-wrapper {
+      margin-bottom: 0px;
+   }
+}

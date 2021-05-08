@@ -3,15 +3,18 @@ extends ./../main/_main.pug
 include ./../mixin/advantage.pug
 include ./../mixin/cardchef.pug
 
+block variables 
+    - const title = "Hotte | About"
+
 block main 
-   section.about
-      .about-wrapper 
-         h2.about-title About Us
+   section.previews
+      .previews-wrapper 
+         h2.previews-title About Us
    section.reviews
       .reviews__wrapper 
-         +advantage('honey-icon.png', 'Choose Food', 'It is a long establed factwill distracted readablelooking at layou.')
-         +advantage('burger-icon.png', 'Place Order', 'It is a long establed factwill distracted readablelooking at layou.')
-         +advantage('appliances-icon.png', 'Receive & Go', 'It is a long establed factwill distracted readablelooking at layou.')       
+         +advantage('honey-icon.webp', 'honey-icon.png', 'icon honey', 'Choose Food', 'It is a long establed factwill distracted readablelooking at layou.')
+         +advantage('burger-icon.webp', 'burger-icon.png', 'icon burger', 'Place Order', 'It is a long establed factwill distracted readablelooking at layou.')
+         +advantage('appliances-icon.webp', 'appliances-icon.png', 'icon appliances', 'Receive & Go', 'It is a long establed factwill distracted readablelooking at layou.')       
    section.experience 
       .experience__wrapper
          .experience__icon-one 
@@ -33,11 +36,11 @@ block main
       h3.chefs__title Special &amp; Awarded Chefs of Hotte
       p.chefs__text There are many variations of passages of Lorem Ipsum available butmajority have suffered alteration injected humour
       .chefs__wrapper-about
-         +chefs('cook-one.png', 'a photo of cook Sanlia Weiss', 'Sanlia Weiss', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
-         +chefs('cook-two.png', 'a photo of cook Maren Britt', 'Maren Britt', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
-         +chefs('cook-three.png', 'a photo of cook Candis Dode', 'Candis Dode', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
-         +chefs('cook-four.png', 'a photo of cook Arvilla Vail', 'Arvilla Vail', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
-         +chefs('cook-five.png', 'a photo of cook Nilda Merrill', 'Nilda Merrill', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
-         +chefs('cook-six.png', 'a photo of cook Danyell Gillen', 'Danyell Gillen', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-one.webp', 'cook-one.png', 'a photo of cook Sanlia Weiss', 'Sanlia Weiss', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-two.webp', 'cook-two.png', 'a photo of cook Maren Britt', 'Maren Britt', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-three.webp', 'cook-three.png', 'a photo of cook Candis Dode', 'Candis Dode', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-four.webp', 'cook-four.png', 'a photo of cook Arvilla Vail', 'Arvilla Vail', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-five.webp', 'cook-five.png', 'a photo of cook Nilda Merrill', 'Nilda Merrill', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
+         +chefs('cook-six.webp', 'cook-six.png', 'a photo of cook Danyell Gillen', 'Danyell Gillen', 'Awarded Chef', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.', 'Ferment of libero osit amet consetetuer adiing elit dictum magnalaoreet aliquam leo. Ut tellus dolordapibus eget cursus eleifend.')
 
 

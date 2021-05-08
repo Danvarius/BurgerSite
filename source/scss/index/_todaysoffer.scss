@@ -8,6 +8,8 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   max-width: 600px;
+   margin: 0 auto;
    padding: 40px 20px;
 
    font-family: "Poppins", sans-serif;
@@ -17,7 +19,6 @@
 
    .today-offer__flex-container {
       padding: 60px 40px 0 40px;
-      margin: 0 auto;
       max-width: 1030px;
    }
 }

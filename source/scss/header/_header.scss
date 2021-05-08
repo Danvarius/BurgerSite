@@ -27,7 +27,7 @@
       }
 
       &:focus {
-         outline: 1px solid #ffffff;
+         outline: 1px solid #000000;
       }
    }
 
@@ -237,7 +237,7 @@
 .page-header__nav--open {
    display: block;
    right: 0px;
-   animation: flesh 0.6s ease;
+   animation: flesh 0.4s ease;
 }
 
 @keyframes flesh {
@@ -332,11 +332,6 @@
 
          transition: all 0.2s ease;
 
-         &:focus {
-            outline: 1px solid #ffffff;
-            transition: outline 0.2s ease;
-         }
-
          &:hover {
             padding-bottom: 5px;
             border-bottom: 2px solid #ffffff;
@@ -346,6 +341,11 @@
          &:active {
             background-color: transparent;
             opacity: 0.5;
+         }
+
+         &:focus {
+            outline: 1px solid #000000;
+            transition: outline 0.2s ease;
          }
       }
 

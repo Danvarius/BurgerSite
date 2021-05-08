@@ -1,7 +1,7 @@
 .customer__wrapper {
    position: relative;
 
-   max-width: 1200px;
+   max-width: 600px;
    margin: 0 auto 50px auto;
    padding: 40px 20px;
 
@@ -26,6 +26,10 @@
 }
 
 @media (min-width: $mini-desktop) {
+   .customer__wrapper {
+      max-width: 1200px;
+   }
+
    .customer__wrapper > .wrapper-rectangle {
       display: block;
    }

@@ -1,6 +1,8 @@
-mixin rectangle(rect, img, alt)
+mixin rectangle(webp, img, alt)
 
-   div.wrapper-rectangle #{rect}
-      img.img-rectangle(src="../../img/" + img, alt="a" + alt)
+   div.wrapper-rectangle
+      picture 
+         source(type="image/webp", srcset="../../img/" + webp) 
+         img.img-rectangle(src="../../img/" + img, alt="a" + alt, loading="lazy")
       .rectangles
       .bg-rectangle

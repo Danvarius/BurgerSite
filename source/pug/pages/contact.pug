@@ -1,0 +1,69 @@
+extends ./../main/_main.pug
+
+include ./../mixin/advantage.pug
+
+block variables 
+    - const title = "Hotte | Contact"
+
+block main 
+   section.previews
+      .previews-wrapper 
+         h2.previews-title Contact
+   section.info 
+      .info__wrapper
+         +advantage('icon-telephone.svg', 'icon-telephone.svg', 'icon telephone', 'Call Now', '+00 863 578 774 +88 725 705 344')
+         +advantage('icon-emails.svg', 'icon-emails.svg', 'icon emails', 'Email Us', 'support@gmail.com hotte24@gmail.com')
+         +advantage('icon-points.svg', 'icon-points.svg', 'icon points', 'Address', 'Landline, from Huntingn Beach, CA(state),USA')
+   section.contact-form 
+      h3.contact-form__title Make a Reservation And Enjoy Fresh Food 
+      p.contact-form__subtitle There are many variations of passages of Lorem Ipsum available but majority have suffered alteration injected humour
+      form.contact-form__forms(action="", method="GET")
+         fieldset.contact-form__fieldset
+            .contact-form__wrapper 
+               label.contact-form__label 
+                  span.contact-form__text Select Menu&ast;
+                  select.contact-form__choice(required)
+                     option.contact-form__opt(value="1") Chicken Fry
+                     option.contact-form__opt(value="2") Special Beff Burger
+                     option.contact-form__opt(value="3") Chicken Burger
+                     option.contact-form__opt(value="4") Hotte Sendwise
+               label.contact-form__label 
+                  span.contact-form__text Quantity&ast;
+                  select.contact-form__choice
+                     option.contact-form__opt(value="1") 02
+                     option.contact-form__opt(value="2") 03
+                     option.contact-form__opt(value="3") 04
+                     option.contact-form__opt(value="4") 05
+               label.contact-form__label 
+                  span.contact-form__text Date&ast;
+                  input.contact-form__input.contact-form__input--data(type="date", value="09-08-2021", min="2021-01-01", max="2021-12-31", required)
+               label.contact-form__label 
+                  span.contact-form__text Time&ast;
+                  input.contact-form__input(type="text", placeholder="09:AM", required)
+            label.contact-form__radio-label
+               input.contact-form__radio(type="radio" name="personal", required)
+               span.contact-form__box
+               span.contact-text Personal Information 
+            .contact-form__wrapper 
+               label.contact-form__label
+                  span.contact-form__text Full Name&ast;
+                  input.contact-form__input(type="text", placeholder="Malinesa Alikrith", required)
+               label.contact-form__label
+                  span.contact-form__text Phone Number&ast;
+                  input.contact-form__input(type="tel", placeholder="88 697 893 ***", required)
+               label.contact-form__label
+                  span.contact-form__text Your Email&ast;
+                  input.contact-form__input(type="email", placeholder="support@gmail.com", required)
+               label.contact-form__label
+                  span.contact-form__text Address&ast;
+                  input.contact-form__input(type="text", placeholder="Lawrence, Michigan(MI), 49064", required)
+               label.contact-form__label.contact-form__label--area
+                  span.contact-form__text Any special Request?
+                  textarea.contact-form__area(name="textarea", cols="70", rows="10", placeholder="Type here")
+            button.contact-form__button(type="submit", name="button") Submit      
+
+
+
+
+
+

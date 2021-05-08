@@ -1,8 +1,8 @@
 header.page-header
    .page-header__wrappers
       .page-header__container
-         a.page-header__img-wrapper(tabindex="1")
-            img.page-header__img(src="../../img/hotte-logo.svg", width="65", height="65")
+         a.page-header__img-wrapper(href="index.html", aria-label="a logo of Hotte")
+            img.page-header__img(src="../../img/hotte-logo.svg", alt="a logo Hotte", width="65", height="65")
          div.page-header__wrapper
             div.page-header__clock-container
                svg.page-header__clock(width="16" height="16")
@@ -16,7 +16,7 @@ header.page-header
                |
                span.page-header__dash
                time.page-header__times 10 am
-         button.page-header__menu
+         button.page-header__menu(aria-label="a button of menu")
             |
             span.page-header__line.page-header__line--open
       nav.page-header__nav.no-js
@@ -32,15 +32,15 @@ header.page-header
             li.page-header__item.page-header__item--grow.page-header__item--top
                |
                |
-               a.page-header__link(href="#") Today's Menu  
+               a.page-header__link(href="news.html") News 
             li.page-header__item 
                |
                |
-               a.page-header__link(href="#") Offer 
+               a.page-header__link(href="blog.html") Blog 
             li.page-header__item 
                |
                |
-               a.page-header__link(href="#") Contact 
+               a.page-header__link(href="contact.html") Contact 
             li.page-header__item.page-header__item--grow 
                |
                |

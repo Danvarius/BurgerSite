@@ -1,0 +1,82 @@
+extends ./../main/_main.pug
+
+include ./../mixin/catageory.pug
+include ./../mixin/post.pug
+include ./../mixin/tags.pug
+include ./../mixin/comment.pug
+include ./../mixin/button.pug
+
+block variables 
+    - const title = "Hotte | Blog"
+
+block main 
+   section.previews
+      .previews-wrapper 
+         h2.previews-title Blog
+   section.blog 
+      .blog__box
+         article.blog__article
+            h3.blog__title Best booking systems and table planners for restaurants.
+            .blog__wrapper
+               span.blog__by By: Jenifer Lofez |
+               time.blog__date(datatime="2021-09-25") Date: 25 August, 2020
+            p.blog__text When trying to get new customers keep your visitoers attenton peope only have time to check thingse when they aren traveling somen makes sense to have your site optimized ever possible devicehave timean and the Internet evergrowing ocean of information ocean of information and it imperative thate your site not only stand out visually to your visitors, but structurally search engines beenbuilt from the ground up using the latest, semantic HTML5 markup, allowing search engines easilydistinguish where your main content starts and ends and easily distinguish.
+            picture 
+               source(type="image/webp", srcset="../../img/photo-blog.webp")
+               img.blog__img(src="../../img/photo-blog.jpg",loading="lazy", alt="a photo of architecture", width="300", height="300")
+            p.blog__big-text When trying to get new customers keep your visitoers attenton peope only have time togse when they aren traveling somen makes sense to have your site optimized ever posshave timean and the Internet evergrowing ocean of information ocean of informationtive thate your site not only stand out visually to your visitors.
+            p.blog__text When trying to get new customers keep your visitoers attenton peope only have time to check thingse when they aren traveling somen makes sense to have your site optimized ever possible devicehave timean and the Internet evergrowing ocean of information ocean of information and it imperative thate your site not only stand out visually to your visitors.
+            p.blog__text When trying to get new customers keep your visitoers attenton peope only have time to check thingse when they aren traveling somen makes sense to have your site optimized ever possible devicehave timean and the Internet evergrowing ocean of information ocean of information and it imperative thate your site not only stand out visually to your visitors, but structurally search engines beenbuilt from the ground up using the latest, semantic HTML5 markup, allowing search engines easilydistinguish where your main content starts and ends and easily distinguish.
+         .blog__container 
+            p.blog__text-tag Tags: Restaurant, Company, Food 
+            .blog__social-wrapper 
+               a.blog__social-link(href="https://www.facebook.com/", aria-label="link of facebook")
+                  svg.blog__social__icon(width="28", height="28") 
+                     use(xlink:href="../../img/sprite.svg#fc")
+               a.blog__social-link(href="https://www.skype.com/ru/", aria-label="link of skype")
+                  svg.blog__social__icon(width="28", height="28")  
+                     use(xlink:href="../../img/sprite.svg#skype")
+               a.blog__social-link(href="https://myaccount.google.com/profile?pli=1", aria-label="link of google plus")
+                  svg.blog__social__icon(width="28", height="28")  
+                     use(xlink:href="../../img/sprite.svg#google")
+      .blog__aside 
+         .blog__search-wrapper 
+            input.blog__search(type="text" placeholder="Search here")
+            button.blog__search-button(type="button", aria-label="button search")
+               svg.blog__search-icon(width="24", height="24")
+                  use(xlink:href="../../img/sprite.svg#search")
+         .blog__catageory 
+            h4.blog__heading Catageory
+            +catageory('Fresh Ingredients')
+            +catageory('Thread With Brace')
+            +catageory('Pasta With Ragu')
+            +catageory('Grilled Fish')
+         .blog__post
+            h4.blog__heading Recent Post
+            +post('2021-09-25', '25 August, 2021', 'Grilled port the sample file ship with theme.')
+            +post('2021-09-25', '25 August, 2021', 'Grilled port the sample file ship with theme.')
+            +post('2021-09-25', '25 August, 2021', 'Grilled port the sample file ship with theme.')
+            +post('2021-09-25', '25 August, 2021', 'Grilled port the sample file ship with theme.')
+         .blog__tags 
+            h4.blog__heading Popular Tags
+            .blog__flex-box
+               +tags('Food')
+               +tags('Restaurant')
+               +tags('Chicken Food')
+               +tags('Health Care')
+               +tags('Beef Burger')
+               +tags('Take Away') 
+   section.blog__comments 
+      h3.blog__comments-title Comments:
+      +comment('Kodins Creankis', 'Business Man', 'When trying to get new customers keep your visitoers attenton peope only havetime to check thin gse when they aren traveling somen makes sense to have yoursite optimized ever possible device have timean and the Internet.')
+      +comment('Marien Tofaz', 'Ceo, Drankes', 'When trying to get new customers keep your visitoers attentontime to check thin gse when they aren traveling somen makes sesite optimized ever possible device.')
+   section.leave-comment 
+      h3.leave-comment__title Leave a comments 
+      form.leave-comment__form(action="", method="GET")
+         input.leave-comment__input(type="text", placeholder="Name:")
+         input.leave-comment__input(type="email", placeholder="Email:")
+         textarea.leave-comment__area(name="area", cols="30", rows="10", placeholder="Message")
+      +button('Submit Now')              
+      
+
+

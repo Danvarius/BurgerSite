@@ -1,0 +1,10 @@
+mixin newscard(webp,img,alt,time,data,title,text)
+
+   a.newscard-link
+      picture 
+         source(type="image/webp", srcset="../../img/" + webp) 
+         img.newscard-img(src="../../img/" + img, alt="" + alt, loading="lazy")
+      time.newscard-data(datatime="" + time) #{data}
+      .newscard-container
+         h3.newscard-title #{title}
+         p.newscard-text #{text}
