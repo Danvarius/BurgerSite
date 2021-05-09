@@ -99,7 +99,7 @@ function optimization() {
 
 function imagewebp() {
   return src("source/img/*.{jpg,png}")
-    .pipe(webp({quality: 100}))
+    .pipe(webp({quality: 90}))
     .pipe(dest("build/img"));
 }
 
@@ -119,7 +119,8 @@ function build() {
   return src ([
     "source/css/**/*.css",
     "source/fonts/**/*",
-    "source/js/main.min.js",
+    "source/js/*.js",
+    "source/slick/**/*",
   ], {base: "source"})
     .pipe(dest("build"));
 }

@@ -13,6 +13,13 @@
    .blog {
       max-width: 1300px;
       padding: 70px;
+      
+   }
+}
+
+@media (min-width: $mini-desktop) {
+   .blog {
+      padding-top: 100px;
    }
 }
 
@@ -252,7 +259,7 @@
 }
 
 .blog__comments .comment-wrapper:nth-child(3) {
-   margin-left: 15%;
+   margin-left: 128px;
 }
 
 @media (min-width: 1000px) {
