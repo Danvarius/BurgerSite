@@ -207,16 +207,10 @@
       border-radius: 5px;
       border: none;
 
-      opacity: 1;
-
       background: linear-gradient(20deg, #FF702A, #CC0E15);
 
       &:hover {
          background: linear-gradient(90deg, #FF702A, #CC0E15);
-      }
-
-      &:active {
-         opacity: 0.7;
       }
 
       .blog__search-icon {
@@ -259,7 +253,14 @@
 }
 
 .blog__comments .comment-wrapper:nth-child(3) {
-   margin-left: 128px;
+   margin-left: 85px;
+}
+
+@media (min-width: 1000px) {
+   
+   .blog__comments .comment-wrapper:nth-child(3) {
+      margin-left: 128px;
+   }
 }
 
 @media (min-width: 1000px) {
