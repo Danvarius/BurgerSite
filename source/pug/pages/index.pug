@@ -8,6 +8,9 @@ include ./../mixin/burgercard.pug
 block variables 
     - const title = "Hotte"
       
+prepend links 
+   link(rel="stylesheet", href="slick/slick.css")
+   link(rel="stylesheet", href="slick/slick-theme.css")      
      
 block main 
    section.preview
@@ -98,5 +101,10 @@ block main
                p.customer__review If you are going to use a passage of cren you need toisn't anything embarrassing hidden in the middle of text  generatorsInternet tend repeat predefined chunks as necessary making thisthe first true generator on the Internet.
                span.customer__name Kristyn Hairston 
                span.customer__who Happy Customer
+
+prepend scripts 
+   script(src="js/jquery.min.js", defer)
+   script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+   script(src="slick/slick.min.js", defer)
 
 

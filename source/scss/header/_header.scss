@@ -99,6 +99,7 @@
 @media (min-width: $tablet) {
    .page-header__wrapper {
       width: 100%;
+      max-width: 100px;
       align-self: flex-start;
       margin-top: 20px;
    }
