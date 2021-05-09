@@ -49,13 +49,13 @@
    .experience__icon-one {
       top: 0;
       right: 0;
-      background-image: url('../../img/donut-white.png');
+      background-image: url('../img/donut-white.png');
    }
 
    .experience__icon-two {
       bottom: -15px;
       left: 0;
-      background-image: url('../../img/appliances-white.png');
+      background-image: url('../img/appliances-white.png');
    }
 
    .experience__title {
@@ -184,7 +184,7 @@
       border-radius: 15px;
 
       background-color: $basic-pink;
-      background-image: url('../../img/icon-like.svg');
+      background-image: url('../img/icon-like.svg');
       background-repeat: no-repeat;
       background-position: 50% 40%;
       background-size: 150px 150px;

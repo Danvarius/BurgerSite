@@ -11,8 +11,8 @@ block variables
 block main 
    section.preview
       picture
-         source(type="image/webp", srcset="img/bg.webp") 
-         img.preview__bg(src="img/bg.jpg", loading="lazy", alt="background burger" width="320")
+         source(type="image/webp", srcset="./img/bg.webp") 
+         img.preview__bg(src="./img/bg.jpg", loading="lazy", alt="background burger" width="320")
       h1.heading.visually-hidden Hotte
       .preview__wrapper 
          h2.preview__title Take Food &amp; Let's Go.
@@ -22,8 +22,8 @@ block main
       .special-offer__wrapper
          .special-offer__burger-box
             picture
-               source(type="image/webp", srcset="img/burger.webp") 
-               img.special-offer__img-burger(src="img/burger.png", loading="lazy", alt="Classic Burger", width="100", height="100")
+               source(type="image/webp", srcset="./img/burger.webp") 
+               img.special-offer__img-burger(src="./img/burger.png", loading="lazy", alt="Classic Burger", width="100", height="100")
             +rectangle('Coca-Cola.webp', 'Coca-Cola.png', ' drink Coca-Cola')
          .special-offer__proposal
             .special-offer__icon-wrapper 
@@ -34,7 +34,7 @@ block main
                   span.special-offer__price $89.00
                   .special-offer__time-wrapper
                      svg(width="16" height="16")
-                        use(xlink:href="../../img/sprite.svg#clock")
+                        use(xlink:href="./img/sprite.svg#clock")
                      span.special-offer__time 25 min away 
                .special-offer__wrapper-plus
                   .special-offer__box-plus
@@ -67,7 +67,7 @@ block main
                   span.special-offer__price $89.00
                   .special-offer__time-wrapper
                      svg(width="16" height="16")
-                        use(xlink:href="../../img/sprite.svg#clock")
+                        use(xlink:href="./img/sprite.svg#clock")
                      span.special-offer__time 25 min away 
                +button('Order Now')
          .today-offer__link-wrapper 
@@ -97,8 +97,8 @@ block main
                p.customer__review If you are going to use a passage of cren you need toisn't anything embarrassing hidden in the middle of text  generatorsInternet tend repeat predefined chunks as necessary making thisthe first true generator on the Internet.
                span.customer__name Kristyn Hairston 
                span.customer__who Happy Customer
-   script(src="../../js/jquery.min.js", defer)
-   script(src="../../js/slick/slick.min.js", defer)
-   script(src="../../js/carousel.js", defer)
+   script(src="js/jquery.min.js", defer)
+   script(src="js/slick/slick.min.js", defer)
+   script(src="js/carousel.js", defer)
 
 
